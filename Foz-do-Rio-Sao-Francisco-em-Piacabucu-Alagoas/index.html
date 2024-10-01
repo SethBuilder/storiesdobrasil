@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Foz do Rio São Francisco: Explore o Tesouro Natural de Alagoas</title>
+  <meta name="description" content="Descubra a beleza deslumbrante da Foz do Rio São Francisco em Piacabucu, Alagoas. Um dos mais belos destinos naturais do Brasil. Explore vídeos e reserve sua viagem com Tesouros do Brasil.">
+  <meta name="keywords" content="Foz do Rio São Francisco, Piacabucu, Alagoas, turismo, viagens no Brasil, ecoturismo, nordeste, natureza, Rio São Francisco">
+  <meta name="author" content="Tesouros do Brasil">
+  
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+    }
+    #video-background {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    #instagram-logo {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      width: 30px;
+      height: 30px;
+    }
+    #instagram-handle {
+      position: absolute;
+      top: 30px;
+      right: 60px;
+      font-size: 1.2em;
+      color: white;
+      text-decoration: none;
+    }
+    #book-now-drawer {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 50px;
+      background-color: rgba(0, 0, 0, 0.5);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+    }
+    #book-now-text {
+      color: white;
+      font-size: 1.5em;
+      font-weight: bold;
+      text-decoration: none;
+      font-family: sans-serif;
+    }
+    /* Desktop-specific styles */
+    @media (min-width: 768px) {
+      body {
+        max-width: 500px; /* Adjust the width as needed */
+        margin: 0 auto;
+      }
+    }
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "TouristAttraction",
+    "name": "Foz do Rio São Francisco",
+    "description": "A foz do Rio São Francisco em Piacabucu, Alagoas, é um dos destinos naturais mais belos do Brasil. Explore com Tesouros do Brasil.",
+    "image": "https://www.exemplo.com.br/foz-rio-sao-francisco.jpg",
+    "url": "https://www.instagram.com/tesourosdobrasil/",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Piacabucu",
+      "addressRegion": "AL",
+      "addressCountry": "BR"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": "-10.4826",
+      "longitude": "-36.4383"
+    },
+    "sameAs": [
+      "https://www.instagram.com/tesourosdobrasil/"
+    ]
+  }
+  </script>
+</head>
+<body>
+  <video id="video-background" poster="poster.jpeg" autoplay muted loop>
+    <source src="Foz-do-Rio-Sao-Francisco-em-Piacabucu-Alagoas.mp4" type="video/mp4">
+  </video>
+  <img id="instagram-logo" src="https://upload.wikimedia.org/wikipedia/commons/9/95/Instagram_logo_2022.svg" alt="Logotipo do Instagram - Tesouros do Brasil">
+  <a id="instagram-handle" href="https://www.instagram.com/tesourosdobrasil/">tesourosdobrasil</a>
+  <div id="book-now-drawer">
+    <a id="book-now-text" href="https://www.instagram.com/tesourosdobrasil/">Assistir mais</a>
+  </div>
+
+  <script>
+    const video = document.getElementById('video-background');
+
+    video.addEventListener('click', () => {
+      if (video.muted) {
+        video.muted = false;
+      } else {
+        video.muted = true;
+      }
+    });
+  </script>
+</body>
+</html>
